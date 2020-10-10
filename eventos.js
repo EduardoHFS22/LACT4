@@ -85,4 +85,8 @@ $(function () {
     $("#Confirmar").on("click", function () {
         alert("Seu dados não foram salvos, tente no semestre que vem.");
     });
+    
+    $("#logo").on("click", function () {
+        recarregar();
+    });
 });
