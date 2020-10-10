@@ -19,6 +19,7 @@ function escuro() {
     $('body').css("background-color","black");
     $('body').css("color","white");
     $('.secao, .list-group-item, .card, .aplicacao').css("background-color","black");
+    $('.cor').css("color","blue");
 }
 
 function padrao() {
@@ -26,6 +27,7 @@ function padrao() {
     $('body').css("background-color","white");
     $('body').css("color","#5a5a5a");
     $('.secao, .list-group-item, .card, .aplicacao').css("background-color","white");
+    $('.cor').css("color","blue");
 }
 
 function extra() {
@@ -33,7 +35,7 @@ function extra() {
     $('body').css("background-color","#4e99b7");
     $('body').css("color","black");
     $('.secao, .list-group-item, .card, .aplicacao').css("background-color","#9c8f9b");
-    $('.card').css("color","white");
+    $('.cor').css("color","white");
 }
 
 
