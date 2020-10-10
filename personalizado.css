@@ -1,20 +1,21 @@
 body {
     color: #5a5a5a;
+    background-color: #f0efef;
     margin-top: 4rem;
   }
 
   .responsivo {
-        height: auto;
-    }
+    height: auto;
+  }
 
-    .responsivo img{
-        max-width: 100%;
-        width: 100%;
-        max-height: 37rem; 
-        min-height: auto;   
-        background-size:100%;
-        background-repeat: no-repeat;
-    }
+  .responsivo img{
+    max-width: 100%;
+    width: 100%;
+    max-height: 37rem; 
+    min-height: auto;   
+    background-size:100%;
+    background-repeat: no-repeat;
+  }
   
   .carousel-caption {
     bottom: 3rem;
@@ -44,7 +45,7 @@ body {
     position: relative;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: #ffffff;
+    background-color: #f0efef;
   }
 
   .aplicacao {
@@ -52,6 +53,16 @@ body {
     margin: 5%;
     background-color: white;
     border-radius: 10px;
+  }
+
+  .carousel-caption{
+    height: 70px;
+    width: 100%;
+    left: 0;
+    bottom:0;
+    background-color: white;
+    color: #5a5a5a;
+    z-index: 0;
   }
 
   @media screen and (max-width: 700px) {
@@ -69,6 +80,10 @@ body {
 
     .aplicacao {
         width: 80%;
+    }
+
+    .carousel-caption{
+      visibility: hidden;
     }
    }
   

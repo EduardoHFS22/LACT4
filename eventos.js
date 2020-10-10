@@ -3,7 +3,6 @@ function scrollPara(id) {
     $('html, body').animate({
         scrollTop: $(id).offset().top
     }, 800, function () {
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = id;
     });
 
@@ -16,30 +15,33 @@ function recarregar() {
 
 function escuro() {
     
-    $('body').css("background-color","black");
-    $('body').css("color","white");
-    $('.secao, .list-group-item, .card, .aplicacao').css("background-color","black");
+    $('body').css("background-color","#121212");
+    $('body, p').css("color","white");
+    $('.secao, .list-group-item, .card').css("background-color","#121212");
+    $('.aplicacao, .carousel-caption').css("background-color","black");
     $('.cor').css("color","blue");
 }
 
 function padrao() {
     
-    $('body').css("background-color","white");
-    $('body').css("color","#5a5a5a");
-    $('.secao, .list-group-item, .card, .aplicacao').css("background-color","white");
+    $('body').css("background-color","#f0efef");
+    $('body, p').css("color","#5a5a5a");
+    $('.secao, .list-group-item, .card').css("background-color","#f0efef");
+    $('.aplicacao, .carousel-caption').css("background-color","white");
     $('.cor').css("color","blue");
 }
 
 function extra() {
     
     $('body').css("background-color","#4e99b7");
-    $('body').css("color","black");
-    $('.secao, .list-group-item, .card, .aplicacao').css("background-color","#9c8f9b");
+    $('body, p').css("color","black");
+    $('.secao, .list-group-item, .card').css("background-color","#9c8f9b");
+    $('.aplicacao, .carousel-caption').css("background-color","#4e99b7");
     $('.cor').css("color","white");
 }
 
 
-$(function () { // jquery
+$(function () {
 
     console.log("documento carregado..");
     

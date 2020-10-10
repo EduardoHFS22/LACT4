@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html xml:lang>
   <head>
     <meta charset="utf-8">
     <title>Programação R</title>
@@ -44,7 +44,7 @@
             <li class="nav-item">
               <a class="nav-link" id="referencias" href="#">Referências </a>
             </li>
-            <li class="nav-item dropdown float-right">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Cores
               </a>
@@ -60,28 +60,22 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main role="main">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active responsivo">
             <img class="first-slide responsivo" src="img1.jpg" alt="First slide">
             <div class="container">
               <div class="carousel-caption">
-                <p style="color: yellow;">Linguagem de programação R</p>
+                <p>Linguagem de programação R.</p>
               </div>
             </div>
           </div>
           <div class="carousel-item responsivo">
-            <img class="second-slid responsivo" src="img2.jpg" alt="Second slide">
+            <img class="second-slide responsivo" src="img2.jpg" alt="second slide">
             <div class="container">
               <div class="carousel-caption">
-                <p style="color: yellow;">Uma das melhores para apresentração de dados</p>
+                <p>Uma das melhores para apresentração de dados.</p>
               </div>
             </div>
           </div>
@@ -89,7 +83,7 @@
             <img class="third-slide responsivo" src="img3.png" alt="third slide">
             <div class="container">
               <div class="carousel-caption">
-                <p style="color: yellow;">Uma linguagem voltada à manipulação, análise e visualização de dados</p>
+                <p>Uma linguagem voltada à manipulação, análise e visualização de dados.</p>
               </div>
             </div>
           </div>
@@ -97,7 +91,7 @@
             <img class="forth-slide responsivo" src="img4.jpg" alt="forth slide">
             <div class="container">
               <div class="carousel-caption">
-                <p style="color: yellow;">Possui fácil aprendizagem, até mesmo para não programadores.</p>
+                <p>Possui fácil aprendizagem, até mesmo para não programadores.</p>
               </div>
             </div>
           </div>
@@ -169,7 +163,7 @@
             </div>
             <div class="form-group">
               <label for="email">Endereço de email</label>
-              <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Seu email" required>
             </div>
             <div class="form-group">
               <label for="telefone">Telefone</label>
