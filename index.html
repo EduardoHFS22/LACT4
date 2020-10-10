@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Programação R</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">                    
+
+    <link rel="icon" href="icon.png">  
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <link rel='stylesheet' type='text/css' media='screen' href='personalizado.css'>
+      <script src="eventos.js"></script>
+  </head>
+  <body id="corpo">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#"><img style="width: 40px; height: 40px;" src="icon.png" alt="Terceiro Slide"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" id="home" href="#">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="oque" href="#">O que é?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="util" href="#">Utilidade</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="exemplos" href="#">Exemplos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="inscricao" href="#">Incrição</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="referencias" href="#">Referências </a>
+            </li>
+            <li class="nav-item dropdown float-right">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cores
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" id="padrao" href="#">Padrão</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" id="escuro" href="#">Escuro</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" id="extra" href="#">Extra</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main role="main">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active responsivo">
+            <img class="first-slide responsivo" src="img1.jpg" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <p>Linguagem de programação R</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item responsivo">
+            <img class="second-slid responsivo" src="img2.jpg" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <p>Uma das melhores para apresentração de dados</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item responsivo">
+            <img class="third-slide responsivo" src="img3.png" alt="third slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <p style="color: black;">Uma linguagem voltada à manipulação, análise e visualização de dados</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item responsivo">
+            <img class="forth-slide responsivo" src="img4.jpg" alt="forth slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <p style="color: black;">Possui fácil aprendizagem, até mesmo para não programadores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Voltar</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Avançar</span>
+        </a>
+      </div>
+
+      <hr class="featurette-divider" id="secao1">
+
+      <div class="jumbotron secao">
+        <div class="container" style="margin-top: -4%; margin-bottom: -4%;">
+          <h1 class="display-6">O que é?</h1>
+          <hr class="my-4">
+          <p class="lead text-justify"><a style="margin-left: 2%;"></a>R é uma linguagem de programação estatística e gráfica que vem se especializando na manipulação, análise e visualização de dados, sendo atualmente considerada uma das melhores ferramentas para essa finalidade.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="secao2">
+
+      <div class="jumbotron secao">
+        <div class="container" style="margin-top: -4%; margin-bottom: -4%;">
+          <h1 class="display-6">Utilidade</h1>
+          <hr class="my-4">
+          <p class="lead text-justify"><a style="margin-left: 2%;"></a>R é uma linguagem que permite você “conversar” com um computador, e instruí-lo a fazer “coisas de estatística”. Isso é bacana, porque faz do R mais do que um programa de estatística comum. Por conta disso o R é mais usado para machine learning e análise de dados.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="secao3">
+
+      <div class="jumbotron secao">
+        <div class="container" style="margin-top: -4%; margin-bottom: -4%;">
+          <h1 class="display-6">Exemplos de aplicação</h1>
+          <hr class="my-4">
+          <p class="lead text-justify"><a style="margin-left: 2%;"></a>A linguagem R pode ser aplicada nas mais diversas áreas e para os mais diversos fins, tais como: Pesquisa Científica, Business Analytics, Desenvolvimento de Software, Relatórios Estatísticos, Econométrica e Análise Financeira, Ciência Sociais e Big Data Analytics.</p>
+          <div class="row">
+            <div class="aplicacao">
+              <img class="card-img-top" src="exemplo1.png" alt="Machine Learning Image">
+              <div class="card-body">
+                <p class="card-text text-center">Machine Learning</p>
+              </div>
+            </div>
+            <div class="aplicacao">
+              <img class="card-img-top" src="exemplo2.png" alt="Analise Dados Image">
+              <div class="card-body">
+                <p class="card-text text-center">Análise e Relatório de Dados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="secao4">
+
+      <div class="jumbotron secao">
+        <div class="container" style="margin-top: -4%; margin-bottom: -4%;">
+          <h1 class="display-6">Incrição</h1>
+          <hr class="my-4">
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Endereço de email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Seu email" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" class="form-control col-4" style="min-width: 150px;" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="check">
+              <label class="form-check-label" for="check">Receber informações</label>
+            </div>
+            <button type="submit" id="Confirmar" class="btn btn-primary col-4">Confirmar</button>
+          </form>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="secao5">
+
+      <div class="jumbotron secao">
+        <div class="container" style="margin-top: -4%; margin-bottom: -4%;">
+          <h1 class="display-6">Referências / Ler Mais </h1>
+          <hr class="my-4">
+          <div class="card col-12">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="https://didatica.tech/a-linguagem-r/">A linguagem R - Didática Tech</a></li>
+              <li class="list-group-item"><a href="http://datascienceacademy.com.br/blog/linguagem-r-por-que-e-hora-de-aprender/"> Linguagem R – Por Que é Hora de Aprender? </a></li>
+              <li class="list-group-item"><a href="https://pt.wikipedia.org/wiki/R_(linguagem_de_programa%C3%A7%C3%A3o)">R (linguagem de programação) - Wikipédia</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center">Desenvolvido por Eduardo Faustino - Prontuário: PE-3005801</footer>
+  </body>
+</html>
