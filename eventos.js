@@ -33,6 +33,7 @@ function extra() {
     $('body').css("background-color","#4e99b7");
     $('body').css("color","black");
     $('.secao, .list-group-item, .card, .aplicacao').css("background-color","#9c8f9b");
+    $('.card').css("color","white");
 }
 
 
